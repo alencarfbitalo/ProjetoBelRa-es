@@ -30,7 +30,7 @@ Como Usar
 
 Clone o repositório:
 
-git clone https://github.com/seuusuario/estoque-casa-racao.git
+git clone https://github.com/alencarfbitalo/ProjetoBelRacoes.git
 
 Acesse a pasta do projeto:
 
