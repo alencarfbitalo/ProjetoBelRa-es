@@ -39,7 +39,7 @@ cd estoque-casa-racao
 Abra o arquivo index.html em um navegador.
 
 Estrutura do Projeto  
-![Imagem WhatsApp 2025-03-08 às 15 56 43_7ff3901e](https://github.com/user-attachments/assets/bd93a4d4-ede0-4958-9b6c-19660f08ef73)
+![Captura de ecrã 2025-03-08 155942](https://github.com/user-attachments/assets/2079ac72-6db9-4faa-8f16-07ddd1dd0590)
 
 Melhorias Futuras
 
