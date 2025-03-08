@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sistema de Estoque</title>
+        <script src="js/utils/storage.js" defer></script>
+        <script src="js/utils/select.js" defer></script>
+        <script src="js/utils/estoque.js" defer></script>
+        <script src="js/utils/tabela.js" defer></script>
+        <script src="js/estoque.js" defer></script>
+
+        <link rel="shortcut icon" href="assets/logo.png" />
+        <link rel="apple-touch-icon" href="assets/logo.png" />
+
+        <link rel="stylesheet" href="css/global.css" />
+        <link rel="stylesheet" href="css/estoque.css" />
+    </head>
+    <body>
+        <main>
+            <header>
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="Logo" />
+                </a>
+
+                <div>
+                    <h1>BelRações</h1>
+                    <p>Estoque</p>
+                </div>
+            </header>
+
+            <form id="form-insert" method="POST">
+                <h2>Modificar no Estoque</h2>
+
+                <label for="id">ID</label>
+                <select name="id-select" required></select>
+
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" />
+
+                <label for="quantidade">Quantidade</label>
+                <input type="number" name="quantidade" />
+
+                <label for="preco">Preço Unitário</label>
+                <input type="number" min="0" step="0.01" name="preco" />
+
+                <input type="submit" value="Modificar" />
+            </form>
+
+            <dialog id="confirm-remove">
+                <form method="DIALOG">
+                    <h2>Remover Produto</h2>
+                    <p>Tem certeza que deseja remover este produto?</p>
+
+                    <div class="inputs">
+                        <input type="submit" value="Sim" />
+                        <input type="submit" value="Não" />
+                    </div>
+                </form>
+            </dialog>
+        </main>
+
+        <section id="lista-produtos">
+            <h2>Lista de Produtos</h2>
+
+            <table cellspacing="0"></table>
+        </section>
+    </body>
+</html>
